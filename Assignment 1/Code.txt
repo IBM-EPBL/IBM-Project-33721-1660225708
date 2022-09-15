@@ -1,0 +1,69 @@
+#include<Servo.h>
+const int ultPin = 7;
+int servoPin = 8;
+
+Servo servo1;
+
+void setup() {
+  Serial.begin(9600);
+  servo1.attach(servoPin);
+  pinMode(2,INPUT);
+  pinMode(4,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(A0,INPUT);
+  digitalWrite(2,LOW);
+}
+
+void loop() {
+  
+  long duration, inches, cm;
+  
+  //Sending the initial signal to capture disctance
+  pinMode(ultPin, OUTPUT);
+  digitalWrite(ultPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(ultPin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(ultPin, LOW);
+  pinMode(ultPin, INPUT);
+  duration = pulseIn(ultPin, HIGH);
+
+  //Convert time into Distance
+  cm = duration / 29 / 2;
+  
+  //Open the door for 5 seconds
+  servo1.write(0);
+  if(cm < 80)
+  {
+    servo1.write(90);
+    delay(5000);
+  }
+  else
+  {
+    servo1.write(0);
+  }
+  
+  //Read PIR sensor and turn on light based on motion
+  int pir = digitalRead(2);
+  if(pir == HIGH)
+  {
+    digitalWrite(4,HIGH);
+    delay(1000);
+  }
+  else if(pir == LOW)
+  {
+    digitalWrite(4,LOW);
+  }
+  
+  //Read Temperature and alert if the threshold exceeds using buzzer
+  float value=analogRead(A0);
+  float temperature=value*0.48;
+  if(temperature > 80)
+  {
+    digitalWrite(12,HIGH);
+  }
+  else
+  {
+    digitalWrite(12,LOW);
+  }
+}
