@@ -1,0 +1,3072 @@
+[
+    {
+        "id": "4e8afcea2f01baab",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c112f7a7.209208",
+        "type": "tab",
+        "label": "Child Tracker",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "2948ed2afb28e83b",
+        "type": "tab",
+        "label": "Child Tracker",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c388a29848d7773a",
+        "type": "tab",
+        "label": "Login Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bdbba8c8abaf505d",
+        "type": "tab",
+        "label": "Chart flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b58ed0e53cb40ced",
+        "type": "tab",
+        "label": "Add user",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d40467620b8c91c",
+        "type": "ibmiot",
+        "name": "IBMiotApi",
+        "keepalive": "300",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "3cf31d49.482212",
+        "type": "ibmiot",
+        "name": "IBMIOT",
+        "keepalive": "300",
+        "serverName": "h2xjhq.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "dbc21ab57e768a19",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b82da486.9fc8d8",
+        "type": "ui_group",
+        "name": "Signin",
+        "tab": "d65502b1.ee517",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c35e46a8.b04ce8",
+        "type": "ui_group",
+        "name": "SensorData",
+        "tab": "d65502b1.ee517",
+        "order": 2,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4de9506d.e7364",
+        "type": "ui_group",
+        "d": true,
+        "name": "History",
+        "tab": "d65502b1.ee517",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d65502b1.ee517",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "552d30d9.1235f",
+        "type": "ui_group",
+        "name": "Child_tracking",
+        "tab": "d65502b1.ee517",
+        "order": 3,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "caf24b9bb8bc998d",
+        "type": "ui_tab",
+        "name": "Admin panel",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e427a015ece88c82",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "caf24b9bb8bc998d",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "2a67f72d7c423189",
+        "type": "ui_tab",
+        "name": "Table data",
+        "icon": "fa-table",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "af2d8f0f5139e2d2",
+        "type": "ui_group",
+        "name": "Location History",
+        "tab": "2a67f72d7c423189",
+        "order": 1,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6200890c50374165",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c8df7fc44e78682d",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "af5865d9ee397f41",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "9b49cb61088734cf",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "1120c665687dc0f9",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "0490d4770d9e16cd",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3f76cd1f380d0172",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "25f14392b3f769a5",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "cbc0164a9e4b2411",
+        "type": "ui_spacer",
+        "z": "bdbba8c8abaf505d",
+        "name": "spacer",
+        "group": "af2d8f0f5139e2d2",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f5f7cada415a15e8",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1deed69fcda2c602",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "62b44eba9c39b679",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4edfae8b.b8925",
+        "type": "ui_group",
+        "name": "Tab",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "205ac72e296cb65f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cc7d7ea92ffb628f",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a40bb0d9c16471df",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fc4ef102.39e0d",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "df5f5222.c4c74",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "df5f5222.c4c74",
+        "type": "ui_tab",
+        "name": "Create user",
+        "icon": "fa-user-circle",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b28759a8a8084e39",
+        "type": "cloudant",
+        "host": "https://apikey-v2-11srmqhzoegm42a9b5jknw2tzwqkl90qw409hsjkx6s8:0806df7c356b9bff1d243e9f1236c0d7@5be2ecfe-fe05-406c-88e0-4a8bd97cb186-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Cloudant db"
+    },
+    {
+        "id": "6b3faaf33f3c8259",
+        "type": "ui_tab",
+        "name": "Login",
+        "icon": "lock",
+        "order": 2,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "8356a049896660e9",
+        "type": "ui_tab",
+        "name": "Automation",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7dc13a7f210c1115",
+        "type": "ui_tab",
+        "name": "New Account",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "87a14f909411ea61",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d293d0d0295d3f4a",
+        "type": "ui_tab",
+        "name": "Account",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4e5b6e84d9f39784",
+        "type": "ui_tab",
+        "name": "Admin",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "50e16c4c54851e27",
+        "type": "ui_tab",
+        "name": "AccountRecovery",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "82941cb0.0ebd68",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ed8abbcd.098318",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ec723ee8.bf683",
+        "type": "ui_group",
+        "name": "User",
+        "tab": "82941cb0.0ebd68",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f0ee50bd.7c28c8",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "82941cb0.0ebd68",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1b8506fc8ca7728a",
+        "type": "ibmiot in",
+        "z": "4e8afcea2f01baab",
+        "authentication": "apiKey",
+        "apiKey": "4d40467620b8c91c",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "bd9bff42c8d06d62"
+            ]
+        ]
+    },
+    {
+        "id": "bd9bff42c8d06d62",
+        "type": "debug",
+        "z": "4e8afcea2f01baab",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ddd542695dc91c6a",
+        "type": "ui_form",
+        "z": "4e8afcea2f01baab",
+        "name": "Dashboard Sign-In",
+        "label": "",
+        "group": "b82da486.9fc8d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "username",
+                "value": "username",
+                "type": "text",
+                "required": true
+            },
+            {
+                "label": "password",
+                "value": "password",
+                "type": "password",
+                "required": true
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "c5e28ec62f2dadcb",
+                "ef4c13cc574607b2",
+                "ffff98e45ba2ddb6"
+            ]
+        ]
+    },
+    {
+        "id": "e8f4bbe2ea1e3e5a",
+        "type": "debug",
+        "z": "4e8afcea2f01baab",
+        "name": "Debug Account Log ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 818.0000915527344,
+        "y": 261.00000762939453,
+        "wires": []
+    },
+    {
+        "id": "2058dd777076e129",
+        "type": "comment",
+        "z": "4e8afcea2f01baab",
+        "name": "Sign-In Section",
+        "info": "",
+        "x": 250.00000762939453,
+        "y": 242.99999618530273,
+        "wires": []
+    },
+    {
+        "id": "c5e28ec62f2dadcb",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Account Log",
+        "func": "var accountlog =  flow.get(\"accountlog\") || [] ; \n\naccountlog.push({ accessAt : new Date(), username : msg.payload.username})\n\nflow.set(\"accountlog\", accountlog);\n\nmsg.payload = accountlog;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 449.00000762939453,
+        "y": 269.99999618530273,
+        "wires": [
+            [
+                "e8f4bbe2ea1e3e5a"
+            ]
+        ]
+    },
+    {
+        "id": "ef4c13cc574607b2",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Account Verification",
+        "func": "var accounts =  flow.get(\"accounts\") || [ { username : \"admin\", password : \"admin\"},{ username : \"guest\", password : \"guest\"}] ; \n\nvar username = msg.payload.username ;\nvar password = msg.payload.password ; \n\nmsg.payload = 1;\n\naccounts.forEach(function ( account ){\n    if ( account.username == username ) {\n       msg.payload = 2;\n       if ( account.password == password ) {\n           msg.payload = 0;\n       } \n    }\n});\n\nif ( msg.payload == 0 ) {\n  var currentsocketid = flow.get(\"clientid\") || undefined;\n  if ( currentsocketid !== undefined && currentsocketid !== msg.socketid ) msg.payload = 3;\n}\n// keep the original socketid from msg.socketid;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 462.0000457763672,
+        "y": 315.0000057220459,
+        "wires": [
+            [
+                "0258b8af85070399"
+            ]
+        ]
+    },
+    {
+        "id": "0258b8af85070399",
+        "type": "switch",
+        "z": "4e8afcea2f01baab",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 631.0000419616699,
+        "y": 345.9999885559082,
+        "wires": [
+            [
+                "9becad4a5cc71e58"
+            ],
+            [
+                "09f4bcf122c8ec61"
+            ],
+            [
+                "61911d601d5062a4"
+            ],
+            [
+                "ee51bde4bde4f16f"
+            ]
+        ]
+    },
+    {
+        "id": "9becad4a5cc71e58",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "= 0 : Success",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\nmsg.payload = { group: {\n    show : [\"Dashboard_SensorData\", \"Another_History\"],\n    hide : [\"Dashboard_Signin\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800.999885559082,
+        "y": 301.99999809265137,
+        "wires": [
+            [
+                "a0c87cdfb1761b82"
+            ]
+        ]
+    },
+    {
+        "id": "09f4bcf122c8ec61",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "= 1 : Unknown User",
+        "func": "msg.payload = \"Username Doesn't exist!!!\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 821.9998931884766,
+        "y": 339,
+        "wires": [
+            [
+                "87d25a91a844912c"
+            ]
+        ]
+    },
+    {
+        "id": "61911d601d5062a4",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "= 2 : Wrong Password",
+        "func": "msg.payload = \"Invalid Password\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 822.9999618530273,
+        "y": 376.0000123977661,
+        "wires": [
+            [
+                "87d25a91a844912c"
+            ]
+        ]
+    },
+    {
+        "id": "a0c87cdfb1761b82",
+        "type": "ui_ui_control",
+        "z": "4e8afcea2f01baab",
+        "name": "Go to Sensor/History Group",
+        "x": 1088.0000686645508,
+        "y": 301.9999942779541,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87d25a91a844912c",
+        "type": "ui_toast",
+        "z": "4e8afcea2f01baab",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "Authentication Failed",
+        "name": "Authentication Failure Dialog",
+        "x": 1087.9999732971191,
+        "y": 359,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "758acb97e2c6f275",
+        "type": "comment",
+        "z": "4e8afcea2f01baab",
+        "name": "Session Management - 15 secs for this demo",
+        "info": "",
+        "x": 329.5,
+        "y": 459.00000762939453,
+        "wires": []
+    },
+    {
+        "id": "f1eebefd95c00a0c",
+        "type": "inject",
+        "z": "4e8afcea2f01baab",
+        "name": "Timer",
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 238.00000762939453,
+        "y": 547.9999923706055,
+        "wires": [
+            [
+                "5a0e4c252a39475a",
+                "cdea5cae15b618b2"
+            ]
+        ]
+    },
+    {
+        "id": "5a0e4c252a39475a",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Detect Session Timer",
+        "func": "var sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nvar SESSION_TIMEOUT = 15000; //15 secs\n\nif ( sessionTimer === 0 /* Inactive, No user signed in */ ) {\n    msg.payload = 2;\n} else {\n    if ( currTime - sessionTimer > SESSION_TIMEOUT ) {\n      msg.payload = 0;  \n    } else {\n      msg.payload = 1;        \n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 426.00003814697266,
+        "y": 514.0000076293945,
+        "wires": [
+            [
+                "fa789fe31d1c3910"
+            ]
+        ]
+    },
+    {
+        "id": "fa789fe31d1c3910",
+        "type": "switch",
+        "z": "4e8afcea2f01baab",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 596.000072479248,
+        "y": 512.0000076293945,
+        "wires": [
+            [
+                "f702a79153e299ce"
+            ],
+            [
+                "61440332a042492f"
+            ],
+            [
+                "2d3d669a69e2c517"
+            ]
+        ]
+    },
+    {
+        "id": "f702a79153e299ce",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Time-Out",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nflow.set(\"sessionTimer\", 0);\n\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = \"Session Expired! Please singin again!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 751.9999847412109,
+        "y": 485.0000114440918,
+        "wires": [
+            [
+                "95c1efbbb810dde9",
+                "636bf94c24d3424d"
+            ]
+        ]
+    },
+    {
+        "id": "95c1efbbb810dde9",
+        "type": "ui_toast",
+        "z": "4e8afcea2f01baab",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "Session Timeout",
+        "name": "Time-Out Dialog",
+        "x": 939.500114440918,
+        "y": 451.0000114440918,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e6b5af7ab32cf6d",
+        "type": "ui_ui_control",
+        "z": "4e8afcea2f01baab",
+        "name": "Go to Signin Group",
+        "x": 1146.5000324249268,
+        "y": 486.99999618530273,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "636bf94c24d3424d",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Sign-In Redirection",
+        "func": "var msg = {};\n\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = { group: {\n    hide : [\"Dashboard_SensorData\", \n            \"Dashboard_History\"],\n    show : [\"Dashboard_Signin\"]\n}\n};\n\nflow.set(\"clientid\", undefined);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950.0000228881836,
+        "y": 488.00000762939453,
+        "wires": [
+            [
+                "3e6b5af7ab32cf6d"
+            ]
+        ]
+    },
+    {
+        "id": "968ffb85d9fafc31",
+        "type": "ui_toast",
+        "z": "4e8afcea2f01baab",
+        "position": "bottom right",
+        "displayTime": "1",
+        "highlight": "",
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "Timer",
+        "name": "Display Remaining Time",
+        "x": 759.7222023010254,
+        "y": 601.9999923706055,
+        "wires": []
+    },
+    {
+        "id": "a060ed670f2446df",
+        "type": "comment",
+        "z": "4e8afcea2f01baab",
+        "name": "Sensor Data Collection",
+        "info": "",
+        "x": 269.00000762939453,
+        "y": 644.0000019073486,
+        "wires": []
+    },
+    {
+        "id": "39f0c15e18afcbab",
+        "type": "inject",
+        "z": "4e8afcea2f01baab",
+        "name": "Timer",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 241.5,
+        "y": 721.0000095367432,
+        "wires": [
+            [
+                "9ea66a648b23e373"
+            ]
+        ]
+    },
+    {
+        "id": "7d95d3a1522671c7",
+        "type": "comment",
+        "z": "4e8afcea2f01baab",
+        "name": "MQTT ? CoAP?",
+        "info": "Expecting data from the actaul sensors.",
+        "x": 416.50000762939453,
+        "y": 680.9999942779541,
+        "wires": []
+    },
+    {
+        "id": "cdea5cae15b618b2",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Calculating Remaining Time (Debug)",
+        "func": "var sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nvar remainingSecs = Math.floor((15000 - (currTime - sessionTimer))/1000) + 1;\n    \nif ( sessionTimer == 0 /* Inactive, No user signed in */ ) {\n    return null;\n} else {\n    \n    if ( remainingSecs <= 7 ) msg.payload = \"Remaining : \" + remainingSecs + \" secs\";  \n    else return null;\n}\n\nmsg.socketid = flow.get(\"clientid\") || \"B1234\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 476.0000305175781,
+        "y": 602.0000200271606,
+        "wires": [
+            [
+                "968ffb85d9fafc31"
+            ]
+        ]
+    },
+    {
+        "id": "48df9f1edc43310a",
+        "type": "ui_text",
+        "z": "4e8afcea2f01baab",
+        "group": "c35e46a8.b04ce8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Label Display",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1140.4999923706055,
+        "y": 807.0001277923584,
+        "wires": []
+    },
+    {
+        "id": "9ea66a648b23e373",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Decode MySensor Message",
+        "func": "\nvar mySensorsMessage = {}\nvar newPayload = {};\nvar timestamp = new Date();\n\nnewPayload.nodeId  =  3;\nnewPayload.type =  Math.floor( Math.random() * Math.floor(2));  // 0 or 1\nif ( newPayload.type === 0 /* temperature */ ) newPayload.value   =  Math.floor( Math.random() * Math.floor(30)) + 10; // 10 - 39\nelse newPayload.value   =  Math.floor( Math.random() * Math.floor(40)) + 40; // 40 - 79\n\nmsg.payload = newPayload; \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 437.50000762939453,
+        "y": 722.0000171661377,
+        "wires": [
+            [
+                "aeb049aead5f6e5d",
+                "67a5dec2974c0355"
+            ]
+        ]
+    },
+    {
+        "id": "aeb049aead5f6e5d",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Filter : temperature",
+        "func": "if (msg.payload.nodeId == 3 && msg.payload.type === 0) {\n    var msg;\n    msg.payload = msg.payload.value;\n    msg.topic = \"Temperature\"\n    return msg;\n}    ",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 654.5000534057617,
+        "y": 678.0000200271606,
+        "wires": [
+            [
+                "d3b708d08003b7e6",
+                "27fc5faf27d41565",
+                "5f32a1152eb376c1",
+                "92dccfc7c48402ba"
+            ]
+        ]
+    },
+    {
+        "id": "d3b708d08003b7e6",
+        "type": "ui_gauge",
+        "z": "4e8afcea2f01baab",
+        "name": "Gauge : Temperature",
+        "group": "c35e46a8.b04ce8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature DHT22",
+        "label": "MySensors v2",
+        "format": "{{value}}°C",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#66ccff",
+            "#ff8000",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 904.5000076293945,
+        "y": 663.9999828338623,
+        "wires": []
+    },
+    {
+        "id": "67a5dec2974c0355",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Filter : humidity",
+        "func": "if (msg.payload.nodeId == 3 && msg.payload.type === 1) {\n    var msg;\n    msg.payload = msg.payload.value;\n    msg.topic = \"Humidity\"\n    return msg;\n}    ",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640.5001068115234,
+        "y": 785.0000591278076,
+        "wires": [
+            [
+                "ac7a2200847c0de5",
+                "27fc5faf27d41565",
+                "5f32a1152eb376c1"
+            ]
+        ]
+    },
+    {
+        "id": "ac7a2200847c0de5",
+        "type": "ui_gauge",
+        "z": "4e8afcea2f01baab",
+        "name": "Gauge : Humidity",
+        "group": "c35e46a8.b04ce8",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Humidity DHT22",
+        "label": "MySensors v2",
+        "format": "{{value}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#1a25ab",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 896.500072479248,
+        "y": 701.0000286102295,
+        "wires": []
+    },
+    {
+        "id": "27fc5faf27d41565",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Attention : temperature & humidity",
+        "func": "context.data = context.data || new Object();\n\nswitch (msg.topic) {\n    case \"Temperature\":\n        context.data.temperature = msg.payload;\n        msg = null;\n        break;\n    case \"Humidity\":\n        context.data.humidity = msg.payload;\n        msg = null;\n        break;\n    default:\n        msg = null;\n    \tbreak;\n\n}\n\nif(context.data.temperature !== null && context.data.humidity !== null && context.data.temperature !== undefined && context.data.humidity !== undefined) {\n\tmsgOut = \"\"; //new Object();\n    msgOut = \"Temerature : \" \n    msgOut += context.data.temperature.toString(); \n    msgOut+= \"°C - Humidity : \"; \n    msgOut+= context.data.humidity.toString();\n    msgOut+= \"%\";\n    context.data=null;\n    var msg = {};\n    msg.payload = msgOut;\n\treturn msg;\n} \n//else return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900.4999923706055,
+        "y": 808.0000877380371,
+        "wires": [
+            [
+                "48df9f1edc43310a"
+            ]
+        ]
+    },
+    {
+        "id": "5f32a1152eb376c1",
+        "type": "ui_chart",
+        "z": "4e8afcea2f01baab",
+        "name": "History : Temperature & Humidity",
+        "group": "4de9506d.e7364",
+        "order": 1,
+        "width": "6",
+        "height": "9",
+        "label": "Temperature & Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "%H:%M",
+        "interpolate": "linear",
+        "nodata": "No Data Yet",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 2,
+        "x": 947.5000305175781,
+        "y": 739.0001049041748,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f85ee659cff3f941",
+        "type": "ui_ui_control",
+        "z": "4e8afcea2f01baab",
+        "name": "Stay in Sensor Group",
+        "x": 1096.500099182129,
+        "y": 526.0000057220459,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61440332a042492f",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Sensor/History Goup",
+        "func": "var msg = {};\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = { group: {\n    show : [\"Dashboard_SensorData\", \"Dashboard_History\"],\n    hide : [\"Dashboard_Signin\"]\n}\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 793.5000305175781,
+        "y": 526.0000038146973,
+        "wires": [
+            [
+                "f85ee659cff3f941"
+            ]
+        ]
+    },
+    {
+        "id": "2d3d669a69e2c517",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "Signin Goup",
+        "func": "var msg = {};\nmsg.payload = { group: {\n    hide : [\"Dashboard_SensorData\", \"Dashboard_History\"],\n    show : [\"Dashboard_Signin\"]\n}\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 764.5000915527344,
+        "y": 567.0000419616699,
+        "wires": [
+            [
+                "baa9a7b74f531657"
+            ]
+        ]
+    },
+    {
+        "id": "baa9a7b74f531657",
+        "type": "ui_ui_control",
+        "z": "4e8afcea2f01baab",
+        "name": "Go to Signin Group",
+        "x": 1084.5002479553223,
+        "y": 564.0000419616699,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92dccfc7c48402ba",
+        "type": "debug",
+        "z": "4e8afcea2f01baab",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 864.0590744018555,
+        "y": 774.6424465179443,
+        "wires": []
+    },
+    {
+        "id": "ffff98e45ba2ddb6",
+        "type": "debug",
+        "z": "4e8afcea2f01baab",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 431.5000419616699,
+        "y": 380.5347557067871,
+        "wires": []
+    },
+    {
+        "id": "ea929b5581648a26",
+        "type": "ui_toast",
+        "z": "4e8afcea2f01baab",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "System In Use.",
+        "name": "System In-Use Dialog",
+        "x": 1071.1111793518066,
+        "y": 412.1215353012085,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee51bde4bde4f16f",
+        "type": "function",
+        "z": "4e8afcea2f01baab",
+        "name": "= 4 : System In Use",
+        "func": "msg.payload = \"System is used by other user.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 812.4443283081055,
+        "y": 413.1215286254883,
+        "wires": [
+            [
+                "ea929b5581648a26"
+            ]
+        ]
+    },
+    {
+        "id": "4701a25.6668f5c",
+        "type": "geofence",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "mode": "circle",
+        "inside": "both",
+        "rad": 73.10235325844981,
+        "points": [],
+        "centre": {
+            "latitude": 17.42251361943091,
+            "longitude": -281.4540410041809
+        },
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "a59e89e9.1c85a8"
+            ]
+        ]
+    },
+    {
+        "id": "4d389e1b.02809",
+        "type": "debug",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8578d536.fe9f88",
+        "type": "ibmiot in",
+        "z": "c112f7a7.209208",
+        "authentication": "apiKey",
+        "apiKey": "3cf31d49.482212",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "12345",
+        "applicationId": "",
+        "deviceType": "NodeMCU",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": "",
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "2fb04439.a83bcc"
+            ]
+        ]
+    },
+    {
+        "id": "2fb04439.a83bcc",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "var name = msg.payload.name\nvar lat = msg.payload.lat\nvar lon = msg.payload.lon\nglobal.set('latitude',lat)\nglobal.set('longitude',lon)\nglobal.set('name',name)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "3f8f34e9.569c8c",
+                "3faa193a.7baf96"
+            ]
+        ]
+    },
+    {
+        "id": "a59e89e9.1c85a8",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "msg.payload=msg.location.inarea\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "4909347f.b97dac"
+            ]
+        ]
+    },
+    {
+        "id": "b69c5f2.21376a",
+        "type": "switch",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "56d729cf.b458c8",
+                "211314ee.4a12bc"
+            ],
+            [
+                "70cc75b1.bd32fc"
+            ]
+        ]
+    },
+    {
+        "id": "56d729cf.b458c8",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "msg.payload=\"Person is not in that area\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "4d389e1b.02809",
+                "ac427f03.f9c35",
+                "cd2c331e.f0ab5"
+            ]
+        ]
+    },
+    {
+        "id": "ac427f03.f9c35",
+        "type": "ui_toast",
+        "z": "c112f7a7.209208",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 570,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2786095f.ac2ba6",
+        "type": "cloudant out",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "cloudant": "",
+        "database": "child",
+        "service": "node-red-ryxne-2021--cloudant-1611909784211-47104",
+        "payonly": true,
+        "operation": "insert",
+        "x": 550,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "211314ee.4a12bc",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "var d = new Date();\n\nvar utc = d.getTime() + (d.getTimezoneOffset() * 60000);\n\nvar offset = 5.5; // This is the offset for UTC+3, in your case (UTC+1) should be 1\n\nnewDate = new Date(utc + (3600000*offset));\n\nmsg.payload = {\n    \"message\":\"Exit\",\n    \"Time\":newDate.toLocaleString(),\n    \"name\":global.get('name'),\n    \"lat\":global.get('latitude'),\n    \"lon\":global.get('longitude')\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "2786095f.ac2ba6",
+                "eac2edd1.2b137"
+            ]
+        ]
+    },
+    {
+        "id": "70cc75b1.bd32fc",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "var d = new Date();\n\nvar utc = d.getTime() + (d.getTimezoneOffset() * 60000);\n\nvar offset = 5.5; // This is the offset for UTC+3, in your case (UTC+1) should be 1\n\nnewDate = new Date(utc + (3600000*offset));\n\nmsg.payload = {\n    \"message\":\"Entry\",\n    \"Time\":newDate.toLocaleString(),\n    \"name\":global.get('name'),\n    \"lat\":global.get('latitude'),\n    \"lon\":global.get('longitude')\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "eac2edd1.2b137"
+            ]
+        ]
+    },
+    {
+        "id": "4909347f.b97dac",
+        "type": "rbe",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "b69c5f2.21376a"
+            ]
+        ]
+    },
+    {
+        "id": "3faa193a.7baf96",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "func": "msg.payload={\n    'name':global.get('name'),\n    'lat':global.get('latitude'),\n    'lon':global.get('longitude')\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 200,
+        "wires": [
+            [
+                "4701a25.6668f5c",
+                "2ee1eff6.e79ff"
+            ]
+        ]
+    },
+    {
+        "id": "eac2edd1.2b137",
+        "type": "debug",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3f8f34e9.569c8c",
+        "type": "debug",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "cd2c331e.f0ab5",
+        "type": "http request",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "4d389e1b.02809"
+            ]
+        ]
+    },
+    {
+        "id": "2ee1eff6.e79ff",
+        "type": "ui_worldmap",
+        "z": "c112f7a7.209208",
+        "group": "c35e46a8.b04ce8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "9.88248086862267",
+        "lon": "78.08164943463629",
+        "zoom": "16",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 480,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bd456e4e.359d8",
+        "type": "ui_form",
+        "z": "c112f7a7.209208",
+        "name": "Dashboard Sign-In",
+        "label": "",
+        "group": "b82da486.9fc8d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "username",
+                "value": "username",
+                "type": "text",
+                "required": true
+            },
+            {
+                "label": "password",
+                "value": "password",
+                "type": "password",
+                "required": true
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 250,
+        "y": 580,
+        "wires": [
+            [
+                "ea809461.f36198",
+                "a926c1ff.ede37",
+                "6cabb33.95cd54c"
+            ]
+        ]
+    },
+    {
+        "id": "6603f3ab.d89abc",
+        "type": "debug",
+        "z": "c112f7a7.209208",
+        "name": "Debug Account Log ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 818.0000915527344,
+        "y": 541.0000076293945,
+        "wires": []
+    },
+    {
+        "id": "bc6dfbc9.d9d138",
+        "type": "comment",
+        "z": "c112f7a7.209208",
+        "name": "Sign-In Section",
+        "info": "",
+        "x": 250.00000762939453,
+        "y": 522.9999961853027,
+        "wires": []
+    },
+    {
+        "id": "ea809461.f36198",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "Account Log",
+        "func": "var accountlog =  flow.get(\"accountlog\") || [] ; \n\naccountlog.push({ accessAt : new Date(), username : msg.payload.username})\n\nflow.set(\"accountlog\", accountlog);\n\nmsg.payload = accountlog;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 449.00000762939453,
+        "y": 549.9999961853027,
+        "wires": [
+            [
+                "6603f3ab.d89abc"
+            ]
+        ]
+    },
+    {
+        "id": "a926c1ff.ede37",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "Account Verification",
+        "func": "var accounts =  flow.get(\"accounts\") || [ { username : \"admin\", password : \"admin\"},{ username : \"guest\", password : \"guest\"}] ; \n\nvar username = msg.payload.username ;\nvar password = msg.payload.password ; \n\nmsg.payload = 1;\n\naccounts.forEach(function ( account ){\n    if ( account.username == username ) {\n       msg.payload = 2;\n       if ( account.password == password ) {\n           msg.payload = 0;\n       } \n    }\n});\n\nif ( msg.payload == 0 ) {\n  var currentsocketid = flow.get(\"clientid\") || undefined;\n  if ( currentsocketid !== undefined && currentsocketid !== msg.socketid ) msg.payload = 3;\n}\n// keep the original socketid from msg.socketid;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 462.0000457763672,
+        "y": 595.0000057220459,
+        "wires": [
+            [
+                "88afc196.8abc2"
+            ]
+        ]
+    },
+    {
+        "id": "88afc196.8abc2",
+        "type": "switch",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 631.0000419616699,
+        "y": 625.9999885559082,
+        "wires": [
+            [
+                "eefb7b9e.f5daa8"
+            ],
+            [
+                "2f57eca.40fa214"
+            ],
+            [
+                "cc34d440.a91948"
+            ],
+            [
+                "126fd334.ed13ed"
+            ]
+        ]
+    },
+    {
+        "id": "eefb7b9e.f5daa8",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "= 0 : Success",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\nmsg.payload = { group: {\n    show: [\"Dashboard_SensorData\", \"Another_History\"],\n    hide : [\"Dashboard_Signin\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800.999885559082,
+        "y": 581.9999980926514,
+        "wires": [
+            [
+                "5c0b7126.396e8"
+            ]
+        ]
+    },
+    {
+        "id": "2f57eca.40fa214",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "= 1 : Unknown User",
+        "func": "msg.payload = \"Username Doesn't exist!!!\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 821.9998931884766,
+        "y": 619,
+        "wires": [
+            [
+                "61e843e4.4d74cc"
+            ]
+        ]
+    },
+    {
+        "id": "cc34d440.a91948",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "= 2 : Wrong Password",
+        "func": "msg.payload = \"Invalid Password\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 822.9999618530273,
+        "y": 656.0000123977661,
+        "wires": [
+            [
+                "61e843e4.4d74cc"
+            ]
+        ]
+    },
+    {
+        "id": "61e843e4.4d74cc",
+        "type": "ui_toast",
+        "z": "c112f7a7.209208",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "Authentication Failed",
+        "name": "Authentication Failure Dialog",
+        "x": 1087.9999732971191,
+        "y": 639,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cabb33.95cd54c",
+        "type": "debug",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 431.5000419616699,
+        "y": 660.5347557067871,
+        "wires": []
+    },
+    {
+        "id": "5c0b7126.396e8",
+        "type": "ui_ui_control",
+        "z": "c112f7a7.209208",
+        "name": "Go to Sensor/History Group",
+        "x": 1088.0000686645508,
+        "y": 581.9999942779541,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b960fa16.e7e618",
+        "type": "ui_toast",
+        "z": "c112f7a7.209208",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "System In Use.",
+        "name": "System In-Use Dialog",
+        "x": 1071.1111793518066,
+        "y": 692.1215353012085,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "126fd334.ed13ed",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "= 4 : System In Use",
+        "func": "msg.payload = \"System is used by other user.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 812.4443283081055,
+        "y": 693.1215286254883,
+        "wires": [
+            [
+                "b960fa16.e7e618"
+            ]
+        ]
+    },
+    {
+        "id": "84a3eab2b4026a22",
+        "type": "ui_button",
+        "z": "c112f7a7.209208",
+        "name": "",
+        "group": "c35e46a8.b04ce8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Log out",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "logout",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 720,
+        "wires": [
+            [
+                "42bc4b87bd8a64f3"
+            ]
+        ]
+    },
+    {
+        "id": "42bc4b87bd8a64f3",
+        "type": "function",
+        "z": "c112f7a7.209208",
+        "name": "Redirect",
+        "func": "var msg = {};\n\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = {\n    group: {\n        hide: [\"Dashboard_SensorData\"],\n        show: [\"Dashboard_Signin\"]\n    }\n};\n\nflow.set(\"clientid\", undefined);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 780,
+        "wires": [
+            [
+                "1bcfa86807813de2"
+            ]
+        ]
+    },
+    {
+        "id": "1bcfa86807813de2",
+        "type": "ui_ui_control",
+        "z": "c112f7a7.209208",
+        "name": "Go back to login",
+        "events": "all",
+        "x": 600,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08e6839c0c5bc46a",
+        "type": "geofence",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "mode": "circle",
+        "inside": "both",
+        "rad": 73.10235325844981,
+        "points": [],
+        "centre": {
+            "latitude": 17.42251361943091,
+            "longitude": -281.4540410041809
+        },
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "90416e5a90fd490b"
+            ]
+        ]
+    },
+    {
+        "id": "ac511594584e0356",
+        "type": "debug",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d10507a6fdbdfd60",
+        "type": "ibmiot in",
+        "z": "2948ed2afb28e83b",
+        "authentication": "apiKey",
+        "apiKey": "3cf31d49.482212",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "12345",
+        "applicationId": "",
+        "deviceType": "NodeMCU",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": "",
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "e3cbea7a6e0a57b7"
+            ]
+        ]
+    },
+    {
+        "id": "e3cbea7a6e0a57b7",
+        "type": "function",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "var name = msg.payload.name\nvar lat = msg.payload.lat\nvar lon = msg.payload.lon\nglobal.set('latitude',lat)\nglobal.set('longitude',lon)\nglobal.set('name',name)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 140,
+        "wires": [
+            [
+                "8fb632d7ca3309da",
+                "2ef09b4cc8071361"
+            ]
+        ]
+    },
+    {
+        "id": "90416e5a90fd490b",
+        "type": "function",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "msg.payload=msg.location.inarea\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "e4c4126dbe949ea3"
+            ]
+        ]
+    },
+    {
+        "id": "35ec186f40a53e0f",
+        "type": "switch",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 420,
+        "wires": [
+            [
+                "8b75e3d8dda7a840",
+                "7e478945d30ba9a9"
+            ],
+            [
+                "822e1d3cb8027842"
+            ]
+        ]
+    },
+    {
+        "id": "8b75e3d8dda7a840",
+        "type": "function",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "msg.topic = \"Child alert\"\nmsg.payload=\"Person is not in that area\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 400,
+        "wires": [
+            [
+                "ac511594584e0356",
+                "39f09de2c9803382",
+                "7850996a65405443"
+            ]
+        ]
+    },
+    {
+        "id": "aae9dad220413852",
+        "type": "ui_toast",
+        "z": "2948ed2afb28e83b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 1070,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fed6711bcb2be958",
+        "type": "cloudant out",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "cloudant": "",
+        "database": "child",
+        "service": "node-red-ryxne-2021--cloudant-1611909784211-47104",
+        "payonly": true,
+        "operation": "insert",
+        "x": 850,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7e478945d30ba9a9",
+        "type": "function",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "var d = new Date();\n\nvar utc = d.getTime() + (d.getTimezoneOffset() * 60000);\n\nvar offset = 5.5; // This is the offset for UTC+3, in your case (UTC+1) should be 1\n\nnewDate = new Date(utc + (3600000*offset));\n\nmsg.payload = {\n    \"message\":\"Exit\",\n    \"Time\":newDate.toLocaleString(),\n    \"name\":global.get('name'),\n    \"lat\":global.get('latitude'),\n    \"lon\":global.get('longitude')\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 440,
+        "wires": [
+            [
+                "fed6711bcb2be958",
+                "2b7c2bde9a871734"
+            ]
+        ]
+    },
+    {
+        "id": "822e1d3cb8027842",
+        "type": "function",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "var d = new Date();\n\nvar utc = d.getTime() + (d.getTimezoneOffset() * 60000);\n\nvar offset = 5.5; // This is the offset for UTC+3, in your case (UTC+1) should be 1\n\nnewDate = new Date(utc + (3600000*offset));\n\nmsg.payload = {\n    \"message\":\"Entry\",\n    \"Time\":newDate.toLocaleString(),\n    \"name\":global.get('name'),\n    \"lat\":global.get('latitude'),\n    \"lon\":global.get('longitude')\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 480,
+        "wires": [
+            [
+                "2b7c2bde9a871734"
+            ]
+        ]
+    },
+    {
+        "id": "e4c4126dbe949ea3",
+        "type": "rbe",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "35ec186f40a53e0f"
+            ]
+        ]
+    },
+    {
+        "id": "2ef09b4cc8071361",
+        "type": "function",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "msg.payload={\n    'name':global.get('name'),\n    'lat':global.get('latitude'),\n    'lon':global.get('longitude')\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 220,
+        "wires": [
+            [
+                "08e6839c0c5bc46a",
+                "778cd96682082e28"
+            ]
+        ]
+    },
+    {
+        "id": "2b7c2bde9a871734",
+        "type": "debug",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8fb632d7ca3309da",
+        "type": "debug",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "39f09de2c9803382",
+        "type": "http request",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 870,
+        "y": 340,
+        "wires": [
+            [
+                "ac511594584e0356"
+            ]
+        ]
+    },
+    {
+        "id": "778cd96682082e28",
+        "type": "ui_worldmap",
+        "z": "2948ed2afb28e83b",
+        "group": "c35e46a8.b04ce8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "9.88248086862267",
+        "lon": "78.08164943463629",
+        "zoom": "16",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "efaa8fc0d6a6ae75",
+        "type": "e-mail",
+        "z": "2948ed2afb28e83b",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "daya@student.tce.edu",
+        "dname": "Mailing notification",
+        "x": 1090,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7850996a65405443",
+        "type": "rbe",
+        "z": "2948ed2afb28e83b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 890,
+        "y": 400,
+        "wires": [
+            [
+                "aae9dad220413852",
+                "efaa8fc0d6a6ae75"
+            ]
+        ]
+    },
+    {
+        "id": "71817216364ba762",
+        "type": "ui_form",
+        "z": "c388a29848d7773a",
+        "name": "Dashboard Sign-In",
+        "label": "",
+        "group": "b82da486.9fc8d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "3211a5cbe725f431",
+                "d05ffbb9b4a7b1b3",
+                "622a5335d95ef08e"
+            ]
+        ]
+    },
+    {
+        "id": "5d4a1cb697a2a48a",
+        "type": "debug",
+        "z": "c388a29848d7773a",
+        "name": "Debug Account Log ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 900,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c826cf68083df889",
+        "type": "comment",
+        "z": "c388a29848d7773a",
+        "name": "Sign-In Section",
+        "info": "",
+        "x": 330.00000762939453,
+        "y": 242.99999618530273,
+        "wires": []
+    },
+    {
+        "id": "3211a5cbe725f431",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "Account Log",
+        "func": "var accountlog =  flow.get(\"accountlog\") || [] ; \n\naccountlog.push({ accessAt : new Date(), username : msg.payload.username})\n\nflow.set(\"accountlog\", accountlog);\n\nmsg.payload = accountlog;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 509.00000762939453,
+        "y": 229.99999618530273,
+        "wires": [
+            [
+                "5d4a1cb697a2a48a"
+            ]
+        ]
+    },
+    {
+        "id": "d05ffbb9b4a7b1b3",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "Account Verification",
+        "func": "var accounts =  flow.get(\"accounts\") || [ { username : \"admin\", password : \"admin\"},{ username : \"guest\", password : \"guest\"}] ; \n\nvar username = msg.payload.username ;\nvar password = msg.payload.password ; \n\nmsg.payload = 1;\n\naccounts.forEach(function ( account ){\n    if ( account.username == username ) {\n       msg.payload = 2;\n       if ( account.password == password ) {\n           msg.payload = 0;\n       } \n    }\n});\n\nif ( msg.payload == 0 ) {\n  var currentsocketid = flow.get(\"clientid\") || undefined;\n  if ( currentsocketid !== undefined && currentsocketid !== msg.socketid ) msg.payload = 3;\n}\n// keep the original socketid from msg.socketid;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 522.0000457763672,
+        "y": 275.0000057220459,
+        "wires": [
+            [
+                "02fed30694e253d2"
+            ]
+        ]
+    },
+    {
+        "id": "02fed30694e253d2",
+        "type": "switch",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 691.0000419616699,
+        "y": 305.9999885559082,
+        "wires": [
+            [
+                "56f5fb127ba9d7ed"
+            ],
+            [
+                "1e69630da4013cd6"
+            ],
+            [
+                "5da647c6d585233c"
+            ],
+            [
+                "aba9811d64bbe962"
+            ]
+        ]
+    },
+    {
+        "id": "56f5fb127ba9d7ed",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 0 : Success",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\nmsg.payload = { group: {\n    show: [\"Dashboard_SensorData\", \"Another_History\"],\n    hide : [\"Dashboard_Signin\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860.999885559082,
+        "y": 261.99999809265137,
+        "wires": [
+            [
+                "158af7a5e8e1e163"
+            ]
+        ]
+    },
+    {
+        "id": "1e69630da4013cd6",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 1 : Unknown User",
+        "func": "msg.payload = \"Username Doesn't exist!!!\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 881.9998931884766,
+        "y": 299,
+        "wires": [
+            [
+                "acf37e04d5fb6a0b"
+            ]
+        ]
+    },
+    {
+        "id": "5da647c6d585233c",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 2 : Wrong Password",
+        "func": "msg.payload = \"Invalid Password\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 882.9999618530273,
+        "y": 336.0000123977661,
+        "wires": [
+            [
+                "acf37e04d5fb6a0b"
+            ]
+        ]
+    },
+    {
+        "id": "acf37e04d5fb6a0b",
+        "type": "ui_toast",
+        "z": "c388a29848d7773a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "Authentication Failed",
+        "name": "Authentication Failure Dialog",
+        "x": 1147.9999732971191,
+        "y": 319,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "622a5335d95ef08e",
+        "type": "debug",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 491.5000419616699,
+        "y": 340.5347557067871,
+        "wires": []
+    },
+    {
+        "id": "158af7a5e8e1e163",
+        "type": "ui_ui_control",
+        "z": "c388a29848d7773a",
+        "name": "Go to Sensor/History Group",
+        "x": 1148.0000686645508,
+        "y": 261.9999942779541,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f0e38350a675131",
+        "type": "ui_toast",
+        "z": "c388a29848d7773a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "System In Use.",
+        "name": "System In-Use Dialog",
+        "x": 1131.1111793518066,
+        "y": 372.1215353012085,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aba9811d64bbe962",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "= 4 : System In Use",
+        "func": "msg.payload = \"System is used by other user.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 872.4443283081055,
+        "y": 373.1215286254883,
+        "wires": [
+            [
+                "3f0e38350a675131"
+            ]
+        ]
+    },
+    {
+        "id": "749e38d48f75d763",
+        "type": "ui_button",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "group": "c35e46a8.b04ce8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Log out",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "logout",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "426d9da1e5b14915"
+            ]
+        ]
+    },
+    {
+        "id": "426d9da1e5b14915",
+        "type": "function",
+        "z": "c388a29848d7773a",
+        "name": "Redirect",
+        "func": "var msg = {};\n\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = {\n    group: {\n        hide: [\"Dashboard_SensorData\"],\n        show: [\"Dashboard_Signin\"]\n    }\n};\n\nflow.set(\"clientid\", undefined);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 460,
+        "wires": [
+            [
+                "bcdfcc52d0765ba6"
+            ]
+        ]
+    },
+    {
+        "id": "bcdfcc52d0765ba6",
+        "type": "ui_ui_control",
+        "z": "c388a29848d7773a",
+        "name": "Go back to login",
+        "events": "all",
+        "x": 660,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0e15e4a5c996e04",
+        "type": "cloudant in",
+        "z": "c388a29848d7773a",
+        "name": "",
+        "cloudant": "b28759a8a8084e39",
+        "database": "userregistartion",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6436685c291b06b2",
+        "type": "ibmiot in",
+        "z": "bdbba8c8abaf505d",
+        "authentication": "apiKey",
+        "apiKey": "3cf31d49.482212",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "ef967e31e37a15d1"
+            ]
+        ]
+    },
+    {
+        "id": "ef967e31e37a15d1",
+        "type": "function",
+        "z": "bdbba8c8abaf505d",
+        "name": "function 1",
+        "func": "var name = msg.payload.name\nvar lat = msg.payload.lat\nvar lon = msg.payload.lon\n\nvar newArr = global.get(\"arr\")\n\nglobal.set(\"arr\", [...newArr, { \"latitude\": lat, \"longitude\": lon}])\n\nglobal.set('latitude', lat)\nglobal.set('longitude', lon)\nglobal.set('name', name)\n\nmsg.payload = global.get(\"arr\")\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "0b13707d52e992b9",
+                "db32edb9e64f198b"
+            ]
+        ]
+    },
+    {
+        "id": "db32edb9e64f198b",
+        "type": "debug",
+        "z": "bdbba8c8abaf505d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0b13707d52e992b9",
+        "type": "ui_table",
+        "z": "bdbba8c8abaf505d",
+        "group": "af2d8f0f5139e2d2",
+        "name": "",
+        "order": 1,
+        "width": "11",
+        "height": 9,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4a5b21adb482c87f",
+        "type": "function",
+        "z": "bdbba8c8abaf505d",
+        "name": "Init array",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"arr\",[])",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4efd4834.2ec6a8",
+        "type": "ui_form",
+        "z": "b58ed0e53cb40ced",
+        "name": "",
+        "label": "",
+        "group": "fc4ef102.39e0d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "UserName",
+                "value": "UserName",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "Password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Number Of Childrens",
+                "value": "Number Of Childrens",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Latitude",
+                "value": "Latitude",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Longitude",
+                "value": "Longitude",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Remember",
+                "value": "Remember",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "UserName": "",
+            "Password": "",
+            "Email": "",
+            "Number Of Childrens": "",
+            "Latitude": "",
+            "Longitude": "",
+            "Remember": false
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "8a66b0228347da34"
+            ]
+        ]
+    },
+    {
+        "id": "8a66b0228347da34",
+        "type": "cloudant out",
+        "z": "b58ed0e53cb40ced",
+        "name": "Add user",
+        "cloudant": "b28759a8a8084e39",
+        "database": "userregistration",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    }
+]
